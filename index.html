@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://kit.fontawesome.com/7492c79b31.js" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--Popper JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            background-image: url(kurt.jpg);
+        }
+
+        .stat {
+            background: #121212;
+            padding-top: 80px;
+            opacity: 0.4;
+            padding-bottom: 80px;
+            color: white;
+            margin-top: 209px;
+        }
+
+        .stat i {
+            font-size: 50px
+        }
+
+        .stat-items h2 {
+            font-weight: bold;
+            font-size: 42px;
+            color: darkorange;
+        }
+
+        .stat p {
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="stat" id="stats">
+
+        <div class="content-box">
+            <br><br>
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-md-3">
+                        <!--View-->
+                        <div class="stat-items">
+                            <i class="fa fa-coffee"></i>
+                            <h2>
+                                <span class="counter text-center">360</span><span>+</span>
+                            </h2>
+                            <p>İçilen Kahve</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <!--Android-->
+                        <div class="stat-items">
+                            <i class="fa fa-android"></i>
+                            <h2>
+                                <span class="counter text-center">21</span><span></span>
+                            </h2>
+                            <p>Yapılan Uygulama</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <!--cog-->
+                        <div class="stat-items">
+                            <i class="fa fa-beer"></i>
+                            <h2>
+                                <span class="counter text-center">22</span><span></span>
+                            </h2>
+                            <p>İçilen Bira</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <!--Android-->
+                        <div class="stat-items">
+                            <i class="fa fa-briefcase"></i>
+                            <h2>
+                                <span class="counter text-center">0</span>
+                            </h2>
+                            <p>İş Görüşmesi</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <script src="jquery.counterup.min.js"></script>
+    <script src="jquery.waypoints.min.js"></script>
+    <script>
+        jQuery(document).ready(function () {
+            $('.counter').counterUp({
+                delay: 10,
+                time: 1000
+            });
+        });
+    </script>
+</body>
+
+</html>
